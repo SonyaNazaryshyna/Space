@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Public Sans", sans-serif;
+}
+
+body {
+    min-height: 105vh;
+    background: linear-gradient(#020103, #192339);
+    color: #fff;
+    overflow-x: hidden; 
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 103%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo-img {
+  width: 90px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+@keyframes fly {
+  from {
+      left: 0%;
+  }
+  to {
+      left: 100%;
+  }
+}
+
+.fly-animation {
+  animation: fly 1s linear forwards;
+}
+
+
+
+header ul 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li 
+{
+   List-style: none;
+   margin-Left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover ,
+header ul li a.active
+{
+    background: #fff;
+    color: #6630be;
+}
+
+#planet {
+    margin-top: 60px;
+    margin-left: -60px;
+    position: absolute;
+}
+
+
+#text {
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 8.5vw;
+    z-index: 9;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#tsyt {
+  position: absolute;
+  color: #fff;
+  font-size: 2.5vw;
+  z-index: 9;
+  top: 50%;
+  left: 39%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+  .btn {
+    margin: 100px;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #fcfcfc;
+    cursor: pointer;
+    position: relative;
+    font-size: 2.5em;
+    z-index: 9;
+    border-radius: 40px;
+    bottom: -500px;
+    left: 65%;
+    transform: translateX(-50%);
+  }
+
+  .btn::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #8661d7, #473498, #0e0a3e, #00080d,
+      #0a1e41, #233382, #4c2a8b, #8661d7
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 30s linear infinite;
+    border-radius: 40px;
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 100% 100%;}
+    100% {background-position: 0 0;}
+}
+
+
+

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Public Sans", sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg,#020103, #192339, #0c0b10 );
+    color: #fff;
+    animation: color 12s ease-in-out infinite;
+    background-size: 300%, 300%;
+    
+}
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    0%{
+        background-position: 0 50%;}
+    
+}
+
+.header h1 {
+    text-shadow: linear-gradient(
+        45deg,
+        #8661d7, #473498, #0e0a3e, #00080d,
+        #0a1e41, #233382, #4c2a8b, #8661d7
+      );
+      animation: glowing 30s linear infinite;
+      font-size: 60px;
+      
+}
+
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 100% 100%;}
+    100% {background-position: 0 0;}
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px 20px 20px;
+  
+    
+    
+
+}
+.wrapper{
+    width:100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .80rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(0.28, -0.03, 0, 0.99);
+    box-shadow: 0 0 20px rgba(41, 40, 40, 0.5);
+
+
+
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+    margin-top: 10px; 
+}
+
+.text p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.text h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .text {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="slide1"] {
+    background-image: url('https://printawallpaper.com/wp-content/uploads/2020/07/rocket_in_space_D.jpg');
+}
+.card[for="slide2"] {
+    background-image: url('https://cdn.astrobin.com/thumbs/4RxIG-1xsgYo_1824x0_esdlMP5Y.png');
+}
+.card[for="slide3"] {
+    background-image: url('https://media.istockphoto.com/id/482954331/photo/solar-system.jpg?s=612x612&w=0&k=20&c=kKymU_nZWmPwh3DdCc25xMq77w4CDZ0S9hrrG08NCmg=');
+}
+.card[for="slide4"] {
+    background-image: url('https://i.pinimg.com/originals/f4/a8/57/f4a85754df5cd9a9c88c8bf296757d37.jpg');
+}
+.card[for="slide5"] {
+    background-image: url('https://media.istockphoto.com/id/177512311/photo/space-background-stars-universe-galaxy-and-nebula.jpg?s=170667a&w=0&k=20&c=BnebaIxFGC1VETEJYHr5mFWDR4CB8XclDCUPmnTHsCM=');
+}
+.card[for="slide6"] {
+    background-image: url('https://4kwallpapers.com/images/wallpapers/planet-earth-orbit-outer-space-cosmos-1920x1200-8769.jpg');
+}
+.card[for="slide7"] {
+    background-image: url('https://cdn.pixabay.com/photo/2020/07/22/01/41/universe-5427747_640.jpg');
+}
+
+
+.logo-img {
+    width: 90px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  @keyframes fly {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 100%;
+    }
+  }
+  
+  .fly-animation {
+    animation: fly 1s linear forwards;
+  }
+  
