@@ -7,12 +7,12 @@
     font-family: "Public Sans", sans-serif;
 }
 
-body {
-    min-height: 105vh;
+ body {
+    min-height: 450vh;
     background: linear-gradient(#020103, #192339);
     color: #fff;
     overflow-x: hidden; 
-}
+} 
 
 header {
     position: absolute;
@@ -83,6 +83,16 @@ header ul li a.active
    
 }
 
+.blur-line {
+    position: absolute;
+    width: 120%;
+    height: 100px; /* Ширина лінії */
+    background-color: rgb(8, 11, 18); /* Колір лінії з прозорістю */
+    top: 115%; /* Позиція по вертикалі */
+    filter: blur(20px); /* Заблюрення */
+    z-index: 0; /* Перемістіть лінію під зображення */
+}
+
 
 
 #Rock {
@@ -106,3 +116,65 @@ header ul li a.active
     white-space: nowrap;
     overflow: hidden;
   }
+
+
+  footer {
+    position: absolute;
+    bottom: -2800px;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #0a152e;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info, .social-media {
+    flex: 1;
+}
+
+.social-media ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media img {
+    width: 30px;
+    height: 40px;
+    margin-left: 30px;
+}
+
+#USSpace {
+    width: 1000px;
+    height: auto;
+    position: absolute;
+    top: 1150px;
+    left: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#USSpace2 {
+    width: 1050px;
+    height: auto;
+    position: absolute;
+    top: 1120px;
+    left: -5px;
+    overflow: hidden;
+    z-index: 0;
+    filter: blur(30px);
+}
+
+#Shuttle {
+    font-size: 70px;
+    position: absolute;
+    top: 1000px;
+    left: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
