@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Public Sans", sans-serif;
+}
+
+body {
+    min-height: 105vh;
+    background: linear-gradient(#020103, #192345);
+    color: #fff;
+    overflow-x: hidden; 
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 103%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.logo-img {
+  width: 90px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+@keyframes fly {
+  from {
+      left: 0%;
+  }
+  to {
+      left: 100%;
+  }
+}
+
+.fly-animation {
+  animation: fly 1s linear forwards;
+}
+
+
+
+header ul 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li 
+{
+   List-style: none;
+   margin-Left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover ,
+header ul li a.active
+{
+    background: #fff;
+    color: #6630be;
+}
+
+#tsplanet {
+    position: absolute;
+    color: #fff;
+    font-size: 2.5vw;
+    z-index: 9;
+    top: 33%;
+    left: 5%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  #Planets {
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 8.5vw;
+    z-index: 9;
+    top: 25%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+#planetsIMG {
+    margin-top: 230px;
+    position: relative;
+    width: 100%; 
+    display: block; 
+    margin-bottom: 0px;
+   
+}
+
+.swiper {
+    margin: 100px;
+    align-items: center;
+}
+
+.planet-info {
+    margin-top: 0px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.planet-info h2 {
+    color: #fff;
+    font-size: 36px; 
+    margin-bottom: 10px;
+}
+
+.planet-info p {
+    color: #fff;
+    font-size: 18px; 
+    max-width: 45%;
+    text-align: center; 
+}
+
+.planet-info img {
+    border-radius: 20px; 
+    width: 35%;
+    height: 35%;
+}
+
+.planet-info #Saturn {
+   width: 50%;
+}
+
+
+
+
+footer {
+    position: absolute;
+    bottom: -1200px;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #0a152e;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info, .social-media {
+    flex: 1;
+}
+
+.social-media ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media img {
+    width: 30px;
+    height: 40px;
+    margin-left: 30px;
+}

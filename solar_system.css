@@ -1,0 +1,384 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Public Sans", sans-serif;
+}
+
+body {
+    min-height: 250vh;
+    background: linear-gradient(#000000, #000000);
+    color: #ffffff;
+    overflow-x: hidden; 
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 103%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.logo-img {
+  width: 90px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+@keyframes fly {
+  from {
+      left: 0%;
+  }
+  to {
+      left: 100%;
+  }
+}
+
+.fly-animation {
+  animation: fly 1s linear forwards;
+}
+
+
+
+header ul 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li 
+{
+   List-style: none;
+   margin-Left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover ,
+header ul li a.active
+{
+    background: #fff;
+    color: #6630be;
+}
+
+#rocketIMG {
+    margin-top: 0px;
+    margin-left: -60px;
+    position: absolute;
+    width: 1550px; 
+   
+}
+
+
+
+#Rock {
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 8.5vw;
+    z-index: 9;
+    top: 25%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#tsrock {
+    position: absolute;
+    color: #fff;
+    font-size: 2.5vw;
+    z-index: 9;
+    top: 33%;
+    left: 5%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+
+
+#sunriseIMG {
+    width: 100%; /* Розтягуємо картинку по ширині сторінки */
+    height: auto; /* Зберігаємо пропорції */
+    display: block; /* Встановлюємо блочний тип елементу */
+}
+
+/* 
+.flex-container {
+    width: 100%; 
+    height: auto; 
+    display: flex;
+    flex-direction: row;
+    fLex-wrap: wrap;
+     justify-content: space-between;
+}
+
+
+.flex-box{
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+} */
+
+
+.flex-container {
+    width: calc(100% - 40px); /* Adjust width to match the section width */
+    max-width: 1000px; /* Set a maximum width for the container */
+    margin: 0 auto;
+    top: 0 px;
+    width: 100%; 
+    height: auto; 
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-box {
+    flex: 1;
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    border-radius: 10px;
+    width: calc(33.33% - 20px); /* 33.33% width for each box minus margins */
+    max-width: 400px; /* Limit width of each box */
+    height: 200px;
+}
+
+.text {
+    font-size: 32px;
+    
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative; 
+}
+
+span{
+    width: 10px;
+    height: 40px;
+    background:white;
+    border-radius:5px;
+    margin: 6px;
+    animation: move 1.1s infinite ease-in-out;
+  }
+  
+  span:nth-of-type(1){
+    transform: rotate(-45deg);
+  }
+  
+  span:nth-of-type(2){
+    transform: rotate(45deg);
+  }
+  
+  @keyframes move{
+    0%{margin-top:0;}
+    50%{margin-top:100px;}
+    100%{margin-top:0;}
+  }
+#tranding .container {
+    display: flex; /* Рядковий режим */
+    flex-wrap: nowrap; /* Не дозволяємо перенесення на наступний рядок */
+    overflow-x: auto; /* Дозволяємо горизонтальну прокрутку, якщо планет більше, ніж може вміститися на екрані */
+    scrollbar-width: none; /* Приховуємо вертикальну смугу прокрутки */
+    -ms-overflow-style: none; /* Приховуємо вертикальну смугу прокрутки у Internet Explorer і Edge */
+}
+
+#tranding .container::-webkit-scrollbar {
+    display: none; /* Приховуємо вертикальну смугу прокрутки у Chrome, Safari та Opera */
+}
+
+/* Стилі для слайдів планет */
+#tranding .swiper-slide {
+    flex: 0 0 auto; /* Забезпечуємо фіксовану ширину для кожного слайда */
+    margin-right: 1rem; /* Додаємо відступ між слайдами */
+}
+
+/* Враховуємо внутрішній відступ у контейнері swiper */
+#tranding .swiper {
+    padding-bottom: 1rem;
+}
+
+/* Стилі для слайдів планет */
+#tranding .swiper-slide {
+    flex: 0 0 300px; /* Фіксована ширина кожної картки (300px) */
+    height: 300px; /* Фіксована висота кожної картки (300px) */
+    margin-right: 1rem; /* Додаємо відступ між картками */
+}
+
+
+.scroll-wrapper {
+    width: 100%; /* Забезпечує повну ширину */
+    overflow-x: auto; /* Дозволяє горизонтальну прокрутку */
+    white-space: nowrap; /* Забезпечує прокручування на одному рядку */
+    padding-left: 40px;
+    position: relative;
+    flex: 1; 
+}
+
+.circle-container { 
+
+    display: inline-flex; /* inline-flex забезпечує горизонтальне розташування всіх елементів на одному рядку */
+    justify-content: center; 
+    margin-top: 100px; 
+    position: relative;
+}
+
+.circle-image { 
+    filter: brightness(0.82); 
+    width: 275px; 
+    height: 275px; 
+    border-radius: 50%; 
+    overflow: hidden;  
+    margin: 10px;  
+    cursor: pointer;  
+    top: 1000%;  
+    transform: translateY(-50%);  
+    animation: circleMovement 5s infinite alternate;  
+} 
+ 
+@keyframes circleMovement { 
+    0% { 
+        transform: translateY(-50%); 
+    } 
+    50% { 
+        transform: translateY(-55%);  
+    } 
+    100% { 
+        transform: translateY(-50%); 
+    } 
+} 
+ 
+.circle-image img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+.scroll-buttons {
+    position: absolute;
+    top: 195%;
+     transform: translateY(-50%); 
+    /* left: 10px; */
+    z-index: 999;
+    display: flex;
+
+}
+
+.scroll-button {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 1700%;
+}
+
+.tx
+{
+    color:#000000;
+}
+.app 
+{
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    /* margin-top: -100px; */
+}
+
+.app h1
+{
+    font-weight: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: 600px;
+    border-radius: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+.quiz
+{
+    padding: 20px 0;
+}
+.quiz h2
+{
+    font-size: 18px;
+    color:#000000;
+    font-weight: 600;
+}
+
+.btn
+{
+    background: #fff;
+    color:#000000;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled])
+{
+    background: #000000;
+    color:#fff
+}
+
+.btn:disabled
+{
+    cursor: no-drop;
+}
+
+.next-button
+{
+    background: #6630be;
+    color:#fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct
+{
+    background: #9aeabc;
+}
+
+.incorrect
+{
+    background: #ff9393;
+}
