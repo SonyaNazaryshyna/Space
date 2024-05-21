@@ -83,87 +83,26 @@ header ul li a.active
    
 }
 
-
-/* 
-#Rock {
-    position: absolute;
-    color: #fff;
-    white-space: nowrap;
-    font-size: 6.5vw;
-    z-index: 9;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-/* 
-#tsrock {
-    position: absolute;
-    color: #fff;
-    font-size: 2.5vw;
-    z-index: 9;
-    top: 33%;
-    left: 5%;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-
-
-
-.form{
-    width: 100%;
-    max-width: 500px;
-    margin: 500px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    
-    justify-content: center; /* додано */
-
-/* }
-
-h2 {
-    color: #2e4872;
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 10%;
-    margin-bottom: 20px; 
-    text-align: center; 
-} */ 
-
-
-/* #rocketIMG {
-    margin-top: 0px;
-    margin-left: -60px;
-    position: absolute;
-    width: 1550px;
-} */
-
 #rocketIMG {
-    position: flex;
-    height: 110%; /* Заповнюємо всю висоту екрану */
-    background: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701903440.jpg'); /* Замініть 'rocket.jpg' на шлях до вашого зображення */
-    background-size: 200%; /* Зображення заповнює всю площу елемента */
- /* Зображення розміщується по центру елемента */
-    mask-image: linear-gradient(to bottom, transparent, black); /* Створюємо маску для розмиття нижнього краю */
-    filter: blur(0px); /* Розмиття для тільки нижньої частини */
-    z-index: 0; /* Розміщуємо зображення на задньому плані */
-
-
-    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 170%;
+    height: 100%;
+    background: url('pexels-philippedonn-1169754.jpg') center/cover no-repeat;
+    mask-image: linear-gradient(to bottom, transparent, black);
+    z-index: -1;
 }
 #rocketIMG2 {
     top: 110%;
     position: absolute;
     width: 100%;
-    height: 110%; /* Заповнюємо всю висоту екрану */
-    background: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701903440.jpg'); /* Замініть 'rocket.jpg' на шлях до вашого зображення */
-    background-size: 200%; /* Зображення заповнює всю площу елемента */
- /* Зображення розміщується по центру елемента */
+    height: 110%; 
+    background: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701903440.jpg'); 
+    background-size: 200%; 
       mask-image: linear-gradient(to bottom, transparent, black);   
-    filter: blur(0px); /* Розмиття для тільки нижньої частини */
-    z-index: 0; /* Розміщуємо зображення на задньому плані */
+    filter: blur(0px); 
+    z-index: 0; 
     border-image: fill 0 linear-gradient(#0003, #0000);
     background-size: cover;
 }
@@ -202,22 +141,6 @@ h2 {
     white-space: normal;
     overflow: hidden;
 }
- /*
-.form {
-    width: 100%;
-    max-width: 500px;
-    top: 30%;
-    margin: 5px auto;
-    padding: 20px; 
-    top: 80%;
-    left: 10%;
-    margin: 5px auto;
-    right: 10%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    justify-content: center;
-}*/
 
 #Registration {
     color: #e6ebf3;
@@ -226,11 +149,6 @@ h2 {
     margin: 500px auto 0 auto;
     text-align: center;
 }
-
-/* * { 
-    font-family: "Poppins", sans-serif;
-} */
-
 #question{
     color: #514b6a;
     font-size: 20px;
@@ -251,21 +169,6 @@ h2 {
     }
 }
 
-
-/* .container{
-    height: 650px;
-    width: 500px;
-    background: #eee;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
-} */
-
-
 .login-container{
     height: 500px;
     width: 500px;
@@ -281,14 +184,6 @@ h2 {
     position: relative;
     
 }
-/* .Form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-} */
-
 
 .Form{
     display: flex;
@@ -398,19 +293,12 @@ input#checked{
 .btn:hover:before{
 width: 100%;
 }
-
-p{
+.card_description {
     color: rgba(0,0,0,.5);
     font-size: 13px;
     font-weight: 500;
     margin: 25px 0;
 }
-
-
-
-
-
-
 
 @media(max-width: 768px){
     .container{
@@ -440,9 +328,9 @@ p{
     input::placeholder{
         font-size: 13px;
     }
-    .forgot-section span{
+    /* .forgot-section span{
         font-size: 12px;
-    }
+    } */
     input#checked{
         margin-right: 2px;
         height: 15px;
@@ -541,12 +429,6 @@ p{
 }
 
 
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-  }
   @keyframes fade{
     from{
       opacity:0.4;
@@ -556,42 +438,19 @@ p{
     }
   }
   
- 
-  
-  /* #slider{
-    margin:0 auto;
-    width:80%;
-    overflow:hidden;
-    position:fixed;
-    top: 140%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .slides{
-     overflow:hidden;
-    animation-duration:4s;
-    display: none; 
-    margin: 0 auto;
-    left: 50%;
-    position: relative  
-  } */
-
-
   #slider {
     margin: 0 auto;
-    width: 80%; /* або будь-який інший розмір, який ви бажаєте */
+    width: 80%; 
     overflow: hidden;
     position: absolute;
     top: 210%;
     left: 60%;
     transform: translate(-50%, -50%);
-    /* додайте інші необхідні стилі */
 }
 
 .slides {
     overflow: hidden;
-    animation-duration: 4s; /* якщо ви збираєтеся використовувати анімацію */
+    animation-duration: 4s;
     display: none;
     margin: 0 auto;
     position: relative;
@@ -649,189 +508,6 @@ p{
     z-index: 5;
   
   }
-
-
-
-
-  /* :root {
-    --first-color: hsl(82, 60%, 28%);
-    --title-color: hsl(0, 0%, 15%);
-    --text-color: hsl(0, 0%, 35%);
-    --body-color: hsl(0, 0%, 95%);
-    --container-color: hsl(0, 0%, 100%);
-    
-    --body-font: "PublicSans", sans-serif;
-    --h2-font-size: 1.25px;
-    --small-font-size: .813px;
-    }
-    
-    @media screen and (min-width: 1120px) {
-        :root {
-            --h2-font-size: 1.5rem;
-            --small-font-size: .875rem;
-        }
-    }
-    img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
-       */
-      
-      /* .container2 {
-        display: grid;
-        place-items: center;
-        margin-inline: 1.5rem;
-        padding-block: 5rem;
-      }
-      
-      .card__container {
-        display: grid;
-        row-gap: 2.5rem;
-      }
-      
-      .card__article {
-        position: relative;
-        overflow: hidden;
-      }
-      
-      .card__img {
-          width: 300px; 
-          height: 500px;
-          border-radius: 1.7rem;
-        }
-      
-      .card__data {
-        width: 280px;
-        background-color: var(--container-color);
-        padding: 1.5rem 2rem;
-        box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
-        border-radius: 1rem;
-        position: absolute;
-        bottom: -9rem;
-        left: 0;
-        right: 0;
-        margin-inline: auto;
-        opacity: 0;
-        transition: opacity 1s 1s;
-      }
-      
-      .card__description {
-        display: block;
-        font-size: var(--small-font-size);
-        margin-bottom: .25rem;
-      }
-      
-      .card__title {
-        font-size: var(--h2-font-size);
-        font-weight: 500;
-        color: var(--title-color);
-        margin-bottom: .75rem;
-      }
-      
-      .card__button {
-        text-decoration: none;
-        font-size: var(--small-font-size);
-        font-weight: 500;
-        color: var(--first-color);
-      }
-      
-      .card__button:hover {
-        text-decoration: underline;
-      }
-      
-      
-      .card__article:hover .card__data {
-        animation: show-data 1s forwards;
-        opacity: 1;
-        transition: opacity .3s;
-      }
-      
-      .card__article:hover {
-        animation: remove-overflow 2s forwards;
-      }
-      
-      .card__article:not(:hover) {
-        animation: show-overflow 2s forwards;
-      }
-      
-      .card__article:not(:hover) .card__data {
-        animation: remove-data 1s forwards;
-      }
-      
-      
-      @keyframes show-data {
-        50% {
-          transform: translateY(-10rem);
-        }
-        100% {
-          transform: translateY(-7rem);
-        }
-      }
-      
-      @keyframes remove-overflow {
-        to {
-          overflow: initial;
-        }
-      }
-      
-      @keyframes remove-data {
-        0% {
-          transform: translateY(-7rem);
-        }
-        50% {
-          transform: translateY(-10rem);
-        }
-        100% {
-          transform: translateY(.5rem);
-        }
-      }
-      
-      @keyframes show-overflow {
-        0% {
-          overflow: initial;
-          pointer-events: none;
-        }
-        50% {
-          overflow: hidden;
-        }
-      }
-      
-      @media screen and (max-width: 340px) {
-        .container {
-          margin-inline: 1rem;
-        }
-      
-        .card__data {
-          width: 250px;
-          padding: 1rem;
-        }
-      }
-      
-      @media screen and (min-width: 768px) {
-        .card__container {
-          grid-template-columns: repeat(2, 1fr);
-          column-gap: 1.5rem;
-        }
-      }
-      
-      @media screen and (min-width: 1120px) {
-        .container {
-          height: 100vh;
-        }
-      
-        .card__container {
-          grid-template-columns: repeat(3, 1fr);
-        }
-        .card__img {
-          width: 348px;
-        }
-        .card__data {
-          width: 316px;
-          padding-inline: 2.5rem;
-        }
-      } */
-
 .heading_excursion{
     text-align:center;
     font-size: 64px;
@@ -850,7 +526,7 @@ p{
         display: flex;
         justify-content: space-between; 
         gap: 20px;
-        flex-wrap: wrap; /* Optional: Allows the cards to wrap to the next line if the container width is too small */
+        flex-wrap: wrap; 
     }
     
 
@@ -917,3 +593,50 @@ p{
 .card_content:hover{
   transform: translateY(0);
 }
+
+footer {
+    position: absolute;
+    bottom: -1110px;
+    left: 0;
+    width: 1482px;
+    padding: 15px;
+    background-color: #0b2041;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+  }
+  
+  .fa {
+    color: white;
+  }
+  
+  .footer-info, .social-media-footer {
+    flex: 1;
+    color: #fff;
+  }
+  
+  .footer-info {
+    text-align: left; 
+    margin-bottom: 10px;
+  }
+  
+  .social-media-footer {
+    text-align: right;
+  }
+  
+  .social-media-footer ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .social-media-footer img {
+    width: 30px;
+    height: 40px;
+    margin-left: 25px;
+  }
+  
+  .footer-info p{
+   color: #fff;
+  }
+  

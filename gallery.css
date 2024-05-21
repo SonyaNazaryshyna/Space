@@ -223,29 +223,41 @@ h1 {
 
 footer {
     position: absolute;
-    bottom: -2359px;
+    bottom: -2358px;
     left: 0;
     width: 100%;
     padding: 15px;
-    background-color: #0a152e;
+    background-color: #0d2142;
     color: #fff;
     display: flex;
     justify-content: space-between;
-}
-
-.footer-info, .social-media {
+    flex-direction: row; 
+  }
+  
+  .fa {
+    color: white;
+  }
+  
+  .footer-info, .social-media {
     flex: 1;
-}
-
-.social-media ul {
+    color: #fff;
+  }
+  
+  .footer-info {
+    text-align: left; 
+  }
+  
+  .social-media {
+    text-align: right; 
+  }
+  
+  .social-media ul {
     padding: 0;
     list-style: none;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.social-media img {
+  }
+  
+  .social-media img {
     width: 30px;
     height: 40px;
     margin-left: 30px;
-}
+  }

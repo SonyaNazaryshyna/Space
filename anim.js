@@ -16,15 +16,20 @@ function typeWriter() {
     type();
 }
 
-typeWriter();
-
-
 document.addEventListener("DOMContentLoaded", function() {
+    typeWriter();
+
     var rocketLink = document.getElementById("rocket-link");
 
     rocketLink.addEventListener("click", function(event) {
         event.preventDefault(); 
         animateRocket();
+    });
+
+    var exploreBtn = document.getElementById("explore-btn");
+
+    exploreBtn.addEventListener("click", function() {
+        window.location.href = "slider.html";
     });
 });
 
@@ -37,21 +42,4 @@ function animateRocket() {
         rocketImg.style.left = "-90px";
     });
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-    var exploreBtn = document.getElementById("explore-btn");
-
-    exploreBtn.addEventListener("click", function() {
-        window.location.href = "space.html";
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    var exploreBtn = document.getElementById("explore-btn");
-
-    exploreBtn.addEventListener("click", function() {
-        window.location.href = "space.html";
-    });
-});
-
 

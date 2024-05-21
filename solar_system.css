@@ -1,7 +1,3 @@
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
 * 
 {
@@ -87,8 +83,6 @@ header ul li a.active
    
 }
 
-
-
 #Rock {
     position: absolute;
     color: #fff;
@@ -111,40 +105,15 @@ header ul li a.active
     overflow: hidden;
   }
 
-
-
 #sunriseIMG {
-    width: 100%; /* Розтягуємо картинку по ширині сторінки */
-    height: auto; /* Зберігаємо пропорції */
-    display: block; /* Встановлюємо блочний тип елементу */
-}
-
-/* 
-.flex-container {
     width: 100%; 
     height: auto; 
-    display: flex;
-    flex-direction: row;
-    fLex-wrap: wrap;
-     justify-content: space-between;
+    display: block; 
 }
 
-
-.flex-box{
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    margin: 10px;
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-} */
-
-
 .flex-container {
-    width: calc(100% - 40px); /* Adjust width to match the section width */
-    max-width: 1000px; /* Set a maximum width for the container */
+    width: calc(100% - 40px); 
+    max-width: 1000px; 
     margin: 0 auto;
     top: 0 px;
     width: 100%; 
@@ -163,8 +132,8 @@ header ul li a.active
     background: rgba(0, 0, 0, 0.5);
     margin: 10px;
     border-radius: 10px;
-    width: calc(33.33% - 20px); /* 33.33% width for each box minus margins */
-    max-width: 400px; /* Limit width of each box */
+    width: calc(33.33% - 20px); 
+    max-width: 400px; 
     height: 200px;
 }
 
@@ -203,40 +172,36 @@ span{
     100%{margin-top:0;}
   }
 #tranding .container {
-    display: flex; /* Рядковий режим */
-    flex-wrap: nowrap; /* Не дозволяємо перенесення на наступний рядок */
-    overflow-x: auto; /* Дозволяємо горизонтальну прокрутку, якщо планет більше, ніж може вміститися на екрані */
-    scrollbar-width: none; /* Приховуємо вертикальну смугу прокрутки */
-    -ms-overflow-style: none; /* Приховуємо вертикальну смугу прокрутки у Internet Explorer і Edge */
+    display: flex; 
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
 }
 
 #tranding .container::-webkit-scrollbar {
-    display: none; /* Приховуємо вертикальну смугу прокрутки у Chrome, Safari та Opera */
+    display: none; 
 }
 
-/* Стилі для слайдів планет */
 #tranding .swiper-slide {
-    flex: 0 0 auto; /* Забезпечуємо фіксовану ширину для кожного слайда */
-    margin-right: 1rem; /* Додаємо відступ між слайдами */
+    flex: 0 0 auto; 
+    margin-right: 1rem; 
 }
 
-/* Враховуємо внутрішній відступ у контейнері swiper */
 #tranding .swiper {
     padding-bottom: 1rem;
 }
 
-/* Стилі для слайдів планет */
 #tranding .swiper-slide {
-    flex: 0 0 300px; /* Фіксована ширина кожної картки (300px) */
-    height: 300px; /* Фіксована висота кожної картки (300px) */
-    margin-right: 1rem; /* Додаємо відступ між картками */
+    flex: 0 0 300px; 
+    height: 300px;
+    margin-right: 1rem; 
 }
 
-
 .scroll-wrapper {
-    width: 100%; /* Забезпечує повну ширину */
-    overflow-x: auto; /* Дозволяє горизонтальну прокрутку */
-    white-space: nowrap; /* Забезпечує прокручування на одному рядку */
+    width: 100%; 
+    overflow-x: auto; 
+    white-space: nowrap; 
     padding-left: 40px;
     position: relative;
     flex: 1; 
@@ -244,7 +209,7 @@ span{
 
 .circle-container { 
 
-    display: inline-flex; /* inline-flex забезпечує горизонтальне розташування всіх елементів на одному рядку */
+    display: inline-flex; 
     justify-content: center; 
     margin-top: 100px; 
     position: relative;
@@ -307,7 +272,7 @@ span{
     background: #fff;
     width: 90%;
     max-width: 600px;
-    margin: 100px auto 0;
+    margin: 2px auto 0;
     border-radius: 10px;
     padding: 30px;
     /* margin-top: -100px; */
@@ -382,3 +347,44 @@ span{
 {
     background: #ff9393;
 }
+
+footer {
+    position: absolute;
+    bottom: -1700px;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #214278;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+  }
+  
+  .fa {
+    color: white;
+  }
+  
+  .footer-info, .social-media {
+    flex: 1;
+    color: #fff;
+  }
+  
+  .footer-info {
+    text-align: left; 
+  }
+  
+  .social-media {
+    text-align: right; 
+  }
+  
+  .social-media ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .social-media img {
+    width: 30px;
+    height: 40px;
+    margin-left: 30px;
+  }

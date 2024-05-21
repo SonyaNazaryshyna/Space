@@ -2,6 +2,7 @@
 <html>
     <head>
     <title>Rockets</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="excursion.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="excursion.js"></script>
@@ -12,19 +13,18 @@
                 <img src="FEP12 (1).png" class="logo-img" id="rocket-img">
             </a>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Rockets</a></li>
-                <li><a href="#">Constellations</a></li>
-                <li><a href="#">Solar system</a></li>
-                <li><a href="#">Planets</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="excursion.html"  class="active">Excursion</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="main_page.html">Home</a></li>
+                <li><a href="constellations.html">Constellations</a></li>
+                <li><a href="solar_system.html">Solar system</a></li>
+                <li><a href="planets.html">Planets</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#" class="active">Excursion</a></li>
+                <li><a href="about_us.html">About us</a></li>
             </ul>
         </header>
         <section>
             <img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701903440.jpg" id="rocketIMG">
-            <img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701903440.jpg" id="rocketIMG2">
+            <!-- <img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701903440.jpg" id="rocketIMG2"> -->
             <h2 id="Rock">Journey Into the Cosmos</h2>
             <h3 id="tsrock"></h3>
          </section>
@@ -33,20 +33,6 @@
              Join us for a thrilling space excursion designed exclusively for tourists. Led by seasoned astronauts and experts, this once-in-a-lifetime adventure promises breathtaking views, weightless moments, and unforgettable memories.
 
     Your journey begins with comprehensive training to prepare you for the wonders of space travel. Then, aboard our cutting-edge spacecraft, you'll witness the beauty of solar system, experience weightlessness, and gain insights into the mysteries of the universe.</h4>
-
-         <!-- <h2 id="Registration">Registration Form</h2>
-         <div class = "form">
-             <label id = "question" >Your Firstname:</label> <br>
-             <input type = "text" name = "firstname" id="firstname" placeholder="John" > <br>
-             <label id = "question" >Your Surname:</label> <br>
-             <input type = "text" name = "surname" id="surname" placeholder="Brown" > <br>
-             <label id = "question" >Your email:</label> <br>
-             <input type = "text" name = "email" id="email" placeholder="user@gmail.com" > <br>
-             <label id = "question"> Password:</label> <br>
-             <input type ="password" name = "password" id="password" > <br>
-             <input type="submit" id = "submit-btn" value="Sign up"> -->
-
-
     <div class="login-container">
         <div class="Form-login-form">
         <h2 class="login">Sign up for your space journey</h2>
@@ -85,82 +71,10 @@
         
             <button class="btn" id="loginbtn">Sign up</button>
         </form>
-   
-
+    </div>  
     </div>
-    
-          
-        <!-- <p>Or Sign up using</p>
-        <div class="social-media">
-            <i class='bx bxl-facebook'></i>
-            <i class='bx bxl-google'></i>
-            <i class='bx bxl-twitter'></i>
-        </div> -->
-  
-    </div>
-</div>
-<!-- <script>
-    const container=document.querySelector(".container") ;
-    const loginForm=document.querySelector('.login-form')
-    const RegisterForm=document.querySelector('.Register-form');
-    const RegiBtn=document.querySelector('.RegiBtn');
-    const LoginBtn=document.querySelector('.LoginBtn');
-    RegiBtn.addEventListener('click',()=>{
-        RegisterForm.classList.add('active');
-        loginForm.classList.add('active')
-    })
-    LoginBtn.addEventListener('click',()=>{
-        RegisterForm.classList.remove('active');
-        loginForm.classList.remove('active')
-    })
-</script> -->
-
-     
-            
-                
+</div>      
          </div class = "form">
-         <!-- <div id="error-message1"></div>
-         <div id="error-message2"></div>
-         <div id="error-message3"></div>
-         <div id="error-message4"></div> -->
-
-
-         <!-- <div class="container2">
-            <div class="Team">
-                <h2>Our Team</h2>
-                <p></p>
-            </div>
-            <div class="card__container">
-               <article class="card__article">
-                  <img src="IMG_8866.jpg" alt="image" class="card__img">
-   
-                  <div class="card__data">
-                     <h2 class="card__title">Sofiia Nazaryshyna</h2>
-                  </div>
-               </article>
-   
-               <article class="card__article">
-                  <img src="IMAGE 2024-05-12 22:02:12.jpg" alt="image" class="card__img">
-   
-                  <div class="card__data">
-                     <h2 class="card__title">Dariia Taradaika</h2>
-                  </div>
-               </article>
-   
-               <article class="card__article">
-                  <img src="IMAGE 2024-05-12 22:07:53.jpg" alt="image" class="card__img">
-   
-                  <div class="card__data">
-                     <h2 class="card__title">Anastasiia Tysiak</h2>
-                  </div>
-               </article>
-             
-            
-            </div>
-         </div> -->
-
-
-
          <h2 class="heading_excursion">What we suggest you</h2>
          <div class="excursion-container">
            
@@ -187,7 +101,6 @@
          </div>
 
 <div id="heading">Our happy tourists</div>
-         <!-- <span id="heading">Our happy tourists</span> -->
 <div id="slider">  
 <div class="slides">  
   <img src="Travel1.jpg"/>
@@ -212,10 +125,20 @@
   
   <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
  </div>
-      
-     
-         <!-- <script src="script.js"></script> -->
-     
     </body>
-
+    <footer>
+        <div class="footer-info">
+            <h4>Contact Information</h4>
+            <p>Lviv, Dragomanova 50, Kolomyiska 1</p>
+            <p>Phone: +0682486943</p>
+            <p>Email: space.fep12@gmail.com</p>
+        </div>
+        <div class="social-media-footer">
+            <ul>
+                <li><a href="https://www.facebook.com/NASA/?locale=uk_UA" alt="Facebook" style="color: white;">Facebook <i class="fa fa-facebook" aria-hidden="true" style="color: white;"></i></a></li>
+                <li><a href="https://www.instagram.com/nasa/" style="color: white;">Instagram <i class="fa fa-instagram" aria-hidden="true" style="color: white;"></i></a></li>
+                <li><a href="https://twitter.com/NASA" style="color: white;">Twitter <i class="fa fa-twitter" aria-hidden="true" style="color: white;"></i></a></li>                
+            </ul>
+        </div>
+    </footer>
 </html>

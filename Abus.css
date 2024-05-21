@@ -94,32 +94,44 @@ header ul li a.active
     color: #3c6bb6;
 }
 footer {
-    position: absolute;
-    bottom: -2920px;
-    left: 0;
-    width: 100%;
-    padding: 15px;
-    background-color: #214278;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
+  position: absolute;
+  bottom: -2920px;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: #214278;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; /* Змінено на рядок */
+}
+
+.fa {
+  color: white;
 }
 
 .footer-info, .social-media {
-    flex: 1;
+  flex: 1;
+  color: #fff;
+}
+
+.footer-info {
+  text-align: left; /* Текст в лівому блоку */
+}
+
+.social-media {
+  text-align: right; /* Текст в правому блоку */
 }
 
 .social-media ul {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
+  padding: 0;
+  list-style: none;
 }
 
 .social-media img {
-    width: 30px;
-    height: 40px;
-    margin-left: 30px;
+  width: 30px;
+  height: 40px;
+  margin-left: 30px;
 }
 
 .contact
@@ -295,6 +307,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 
@@ -576,7 +589,7 @@ img {
 
 .container4 {
     max-width: 1200px;
-    margin: 10rem auto 0; /* Adjust the top margin as needed */
+    margin: 10rem auto 0; 
     padding: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -606,23 +619,23 @@ img {
   .card {
     padding: 2rem;
     display: flex;
-    align-items: center; /* Adjusted */
-    justify-content: flex-start; /* Added */
+    align-items: center; 
+    justify-content: flex-start;
     gap: 2rem;
-    background-color: #ffffff; /* Set background color to white */
+    background-color: #ffffff; 
     border-radius: 1rem;
     box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.2);
     cursor: pointer;
-    color: #000000; /* Set text color to black */
+    color: #000000; 
 }
 
   
 .card_img {
-  width: 100px; /* Set a fixed width */
-  height: 100px; /* Set a fixed height */
-  border-radius: 50%; /* Ensure the image is circular */
-  object-fit: cover; /* Maintain aspect ratio */
-  object-position: center; /* Center the image within the circular container */
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%;
+  object-fit: cover; 
+  object-position: center; 
 }
 
 
@@ -649,19 +662,6 @@ img {
     font-size: 1rem;
     font-weight: 500;
   }
-
-/* 
-  .blur-line {
-    left: -90px;
-      position: absolute;
-      width: 2000px; 
-      height: 95px; 
-      background-color: #152039;
-      top: 113%; 
-      filter: blur(30px); 
-      z-index: 1; 
-  }
-   */
 
 
   

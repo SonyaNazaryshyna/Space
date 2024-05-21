@@ -46,14 +46,14 @@ document.addEventListener("DOMContentLoaded", function() {
     scrollLeftButton.addEventListener("click", function() {
         scrollWrapper.scrollTo({
             left: scrollWrapper.scrollLeft - 300,
-            behavior: 'smooth' // Додаємо плавне прокручування
+            behavior: 'smooth' 
         });
     });
 
     scrollRightButton.addEventListener("click", function() {
         scrollWrapper.scrollTo({
             left: scrollWrapper.scrollLeft + 300,
-            behavior: 'smooth' // Додаємо плавне прокручування
+            behavior: 'smooth' 
         });
     });
 });

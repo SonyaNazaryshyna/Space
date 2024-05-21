@@ -143,25 +143,25 @@ input:checked + label .text {
 }
 
 .card[for="slide1"] {
-    background-image: url('https://printawallpaper.com/wp-content/uploads/2020/07/rocket_in_space_D.jpg');
+    background-image: url('rocket_in_space_D.webp');
 }
 .card[for="slide2"] {
-    background-image: url('https://cdn.astrobin.com/thumbs/4RxIG-1xsgYo_1824x0_esdlMP5Y.png');
+    background-image: url('4RxIG-1xsgYo_1824x0_esdlMP5Y.png');
 }
 .card[for="slide3"] {
-    background-image: url('https://media.istockphoto.com/id/482954331/photo/solar-system.jpg?s=612x612&w=0&k=20&c=kKymU_nZWmPwh3DdCc25xMq77w4CDZ0S9hrrG08NCmg=');
+    background-image: url('istockphoto-482954331-612x612.jpg');
 }
 .card[for="slide4"] {
-    background-image: url('https://i.pinimg.com/originals/f4/a8/57/f4a85754df5cd9a9c88c8bf296757d37.jpg');
+    background-image: url('f4a85754df5cd9a9c88c8bf296757d37.jpg');
 }
 .card[for="slide5"] {
-    background-image: url('https://media.istockphoto.com/id/177512311/photo/space-background-stars-universe-galaxy-and-nebula.jpg?s=170667a&w=0&k=20&c=BnebaIxFGC1VETEJYHr5mFWDR4CB8XclDCUPmnTHsCM=');
+    background-image: url('istockphoto-177512311-170667a.jpg');
 }
 .card[for="slide6"] {
-    background-image: url('https://4kwallpapers.com/images/wallpapers/planet-earth-orbit-outer-space-cosmos-1920x1200-8769.jpg');
+    background-image: url('planet-earth-orbit-outer-space-cosmos-1920x1200-8769.jpg');
 }
 .card[for="slide7"] {
-    background-image: url('https://cdn.pixabay.com/photo/2020/07/22/01/41/universe-5427747_640.jpg');
+    background-image: url('universe-5427747_640.jpg');
 }
 
 
